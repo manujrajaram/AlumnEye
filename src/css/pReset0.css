@@ -1,0 +1,88 @@
+body, input{
+	font-family: 'Montserrat', sans-serif;
+}
+
+#navbar{
+	width: 1920px;
+	height: 99px;
+	position: relative;
+	background-color: #004B7C;
+}
+
+#navbar h2{
+	color: #FFFFFF;
+	font-size: 2em;
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+}
+
+#navbar button{
+	float: right;
+	background-color: #FFFFFF;
+	color: #004B7C;
+	text-align: center;
+	border-radius: 20px;
+	font-size: 20px;
+	margin: 0;
+  	position: relative;
+  	top: 50%;
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+
+#or{
+	color: #004B7C;
+}
+
+#_submit{
+	background-color: #FFFFFF;
+	color: #004B7C;
+	text-align: center;
+	border-radius: 20px;
+	font-size: 20px;
+}
+
+#label01{
+	width: 390px;
+	height: 70px;
+	font-size: 35px;
+	line-height: 35px;
+	color:#002944;
+}
+
+#label02{
+	width: 390px;
+	height: 70px;
+	font-size: 35px;
+	line-height: 35px;
+	color:#002944;
+}
+
+#phone{
+	width: 410px;
+	height: 50px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #707070;
+	background:rgba(255,255,255,255);
+}
+
+#eMail{
+	width: 410px;
+	height: 50px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #707070;
+	background:rgba(255,255,255,255);
+}
+
