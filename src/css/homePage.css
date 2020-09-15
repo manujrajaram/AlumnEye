@@ -4,6 +4,10 @@ body{
     padding:0;
 }
 
+.navbar-custom{
+    background-color: #002944;
+}
+
 
  #toggle{
      display:none;
