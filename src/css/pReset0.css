@@ -37,6 +37,7 @@ body, input{
 
 #or{
 	color: #004B7C;
+	padding-left: 50%;
 }
 
 #_submit{
@@ -46,20 +47,25 @@ body, input{
 	border-radius: 5px;
 	font-size: 20px;
 	outline: none;
+
+}
+
+#centerbtn{
+	padding-left: 40%
 }
 
 #label01{
-	width: 390px;
+	width: 25%;
 	height: 70px;
-	font-size: 35px;
+	font-size: 25px;
 	line-height: 35px;
 	color:#002944;
 }
 
 #label02{
-	width: 390px;
+	width: 25%;
 	height: 70px;
-	font-size: 35px;
+	font-size: 25px;
 	line-height: 35px;
 	color:#002944;
 }
@@ -88,5 +94,11 @@ body, input{
 	border: 1px solid #707070;
 	background:rgba(255,255,255,255);
 	outline: none;
+}
+
+.parent{
+	margin: auto;
+  	width: 30%;
+  	padding: 100px;
 }
 

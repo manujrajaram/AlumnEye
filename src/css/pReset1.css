@@ -35,9 +35,7 @@ body, input{
   	transform: translateY(-50%);
 }
 
-#or{
-	color: #004B7C;
-}
+
 
 #reset{
 	background-color: #002944;
@@ -48,10 +46,14 @@ body, input{
 	outline: none;
 }
 
+#centerbtn{
+	padding-left: 40%
+}
+
 #label1{
 	width: 390px;
 	height: 70px;
-	font-size: 35px;
+	font-size: 25px;
 	line-height: 35px;
 	color:#002944;
 }
@@ -59,7 +61,7 @@ body, input{
 #label2{
 	width: 390px;
 	height: 70px;
-	font-size: 35px;
+	font-size: 25px;
 	line-height: 35px;
 	color:#002944;
 }
@@ -88,5 +90,11 @@ body, input{
 	border: 1px solid #707070;
 	background:rgba(255,255,255,255);
 	outline: none;
+}
+
+.parent{
+	margin: auto;
+  	width: 30%;
+  	padding: 100px;
 }
 
