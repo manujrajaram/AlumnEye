@@ -25,9 +25,10 @@ body, input{
 	background-color: #FFFFFF;
 	color: #004B7C;
 	text-align: center;
-	border-radius: 20px;
+	border-radius: 5px;
 	font-size: 20px;
 	margin: 0;
+	outline: none;
   	position: relative;
   	top: 50%;
   	-ms-transform: translateY(-50%);
@@ -39,11 +40,12 @@ body, input{
 }
 
 #_submit{
-	background-color: #FFFFFF;
-	color: #004B7C;
+	background-color: #002944;
+	color: #FFFFFF;
 	text-align: center;
-	border-radius: 20px;
+	border-radius: 5px;
 	font-size: 20px;
+	outline: none;
 }
 
 #label01{
@@ -72,6 +74,7 @@ body, input{
 	border-radius: 10px;
 	border: 1px solid #707070;
 	background:rgba(255,255,255,255);
+	outline: none;
 }
 
 #eMail{
@@ -84,5 +87,6 @@ body, input{
 	border-radius: 10px;
 	border: 1px solid #707070;
 	background:rgba(255,255,255,255);
+	outline: none;
 }
 
