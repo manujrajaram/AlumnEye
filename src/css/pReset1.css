@@ -3,7 +3,7 @@ body, input{
 }
 
 #navbar{
-	width: 1920px;
+	width: 100%;
 	height: 99px;
 	position: relative;
 	background-color: #004B7C;
@@ -25,31 +25,35 @@ body, input{
 	background-color: #FFFFFF;
 	color: #004B7C;
 	text-align: center;
-	border-radius: 20px;
+	border-radius: 5px;
 	font-size: 20px;
 	margin: 0;
+	outline: none;
   	position: relative;
   	top: 50%;
   	-ms-transform: translateY(-50%);
   	transform: translateY(-50%);
 }
 
-#or{
-	color: #004B7C;
-}
+
 
 #reset{
-	background-color: #FFFFFF;
-	color: #004B7C;
+	background-color: #002944;
+	color: #FFFFFF;
 	text-align: center;
-	border-radius: 20px;
+	border-radius: 5px;
 	font-size: 20px;
+	outline: none;
+}
+
+#centerbtn{
+	padding-left: 40%
 }
 
 #label1{
 	width: 390px;
 	height: 70px;
-	font-size: 35px;
+	font-size: 25px;
 	line-height: 35px;
 	color:#002944;
 }
@@ -57,7 +61,7 @@ body, input{
 #label2{
 	width: 390px;
 	height: 70px;
-	font-size: 35px;
+	font-size: 25px;
 	line-height: 35px;
 	color:#002944;
 }
@@ -72,6 +76,7 @@ body, input{
 	border-radius: 10px;
 	border: 1px solid #707070;
 	background:rgba(255,255,255,255);
+	outline: none;
 }
 
 #p2{
@@ -84,5 +89,12 @@ body, input{
 	border-radius: 10px;
 	border: 1px solid #707070;
 	background:rgba(255,255,255,255);
+	outline: none;
+}
+
+.parent{
+	margin: auto;
+  	width: 30%;
+  	padding: 100px;
 }
 
