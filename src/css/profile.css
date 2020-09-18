@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+
+*{
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-custom{
+    background-color: #002944;
+}
+
+.left{
+    display:flex;
+    float: left;
+    border:1px #00263E;
+    background-image: linear-gradient( #004B7C,#00263E);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    text-align: center;
+}
+
+.right{
+    float:right;  
+    height: 100%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box; 
+    direction: ltr;
+}
+
+.left-panel{
+    color:white;
+    font-size: 25px;
+    font-weight: bold; 
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+.profile-header{
+    padding: 25px 25px 25px 25px ; 
+    background-color:#9fc1d6;
+}
+
+.username{
+    box-sizing: border-box; 
+    direction: ltr; 
+    font-size: 24px;
+    font-weight: bold;
+    color: #00263E;
+}
+.credential-description{
+    box-sizing: border-box; 
+    color:grey; 
+    direction: ltr; 
+    font-size: 20px;
+
+}
+
