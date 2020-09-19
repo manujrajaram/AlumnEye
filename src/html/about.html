@@ -10,10 +10,18 @@
     <script src="https://kit.fontawesome.com/78a1f04c92.js" crossorigin="anonymous"></script>
     <!--AOS CSS-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <!--Leaflet Script-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-        <a class="navbar-brand" href="./homePage.html">AlumnEye</a>
+        <a class="navbar-brand" href="./homePage.html" style="font-size: xx-large;">AlumnEye</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -69,106 +77,82 @@
 
     <!--Cards with AOS Effect-->
     <div class="container">
-      <!--First Row-->
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem;" data-aos="fade-right" data-aos-duration="1000"
-          data-aos-easing="ease-in-out">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+      <!--Card Deck-->
+      <div class="card-deck">
+        <div class="card mb-3" data-aos="flip-up" data-aos-duration="500"  data-aos-easing="ease-in-out" data-aos-anchor-placement="center-center">
+          <div class="card-body">
+            <h5 class="card-title">Event-1</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
-
-        <div class="col-md-4">
-          <p></p>
-          <p></p>
-          <p></p>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem;" data-aos="fade-left" data-aos-duration="1000"
-          data-aos-easing="ease-in-out">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        <div class="card mb-3" data-aos="flip-up" data-aos-duration="500"  data-aos-easing="ease-in-out" data-aos-anchor-placement="center-center">
+          <div class="card-body">
+            <h5 class="card-title">Event-2</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
-      </div>  <br>
-
-      <!--Second Row-->
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem;" data-aos="fade-right" data-aos-duration="1000"
-          data-aos-easing="ease-in-out">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        <div class="card mb-3" data-aos="flip-up" data-aos-duration="500"  data-aos-easing="ease-in-out" data-aos-anchor-placement="center-center">
+          <div class="card-body">
+            <h5 class="card-title">Event-3</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
+      </div>
 
-        <div class="col-md-4">
-          <p></p>
-          <p></p>
-          <p></p>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem;" data-aos="fade-left" data-aos-duration="1000"
-          data-aos-easing="ease-in-out">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+      <div class="card-deck">
+        <div class="card mb-3" data-aos="flip-up" data-aos-duration="500"  data-aos-easing="ease-in-out" data-aos-anchor-placement="center-center">
+          <div class="card-body">
+            <h5 class="card-title">Event-4</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
-      </div>  <br>
-
-      <!--Third Row-->
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem;" data-aos="fade-right" data-aos-duration="1000"
-          data-aos-easing="ease-in-out">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        <div class="card mb-3" data-aos="flip-up" data-aos-duration="500"  data-aos-easing="ease-in-out" data-aos-anchor-placement="center-center">
+          <div class="card-body">
+            <h5 class="card-title">Event-5</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
-
-        <div class="col-md-4">
-          <p></p>
-          <p></p>
-          <p></p>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem;" data-aos="fade-left" data-aos-duration="1000"
-          data-aos-easing="ease-in-out">
-            <img class="card-img-top" src="..." alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        <div class="card mb-3" data-aos="flip-up" data-aos-duration="500"  data-aos-easing="ease-in-out" data-aos-anchor-placement="center-center">
+          <div class="card-body">
+            <h5 class="card-title">Event-6</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
-      </div>  <br>
+      </div>
+    </div>
+    
 
 
+
+
+
+    <!--Embedding Maps-->
+    <div class="container">
+      <div>
+        <h3 class="display-4 text-center">Locate us here!</h3>
+      </div>
+      <div class=" mb-5 mt-auto " id = "map" style = "width:100%; height: 50%"></div>
+    </div>
+    
+      
       
       
     
@@ -185,5 +169,7 @@
     <script>
       AOS.init();
     </script>
+    <!--User defined script-->
+    <script src="../js/about.js"></script>
 </body>
 </html>
