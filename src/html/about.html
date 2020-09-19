@@ -4,10 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" type="text/css" href="../css/about.css">
-    <!--Bootstrap CDN-->
+    <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--Font Awesome CDN-->
     <script src="https://kit.fontawesome.com/78a1f04c92.js" crossorigin="anonymous"></script>
+    <!--AOS CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
@@ -44,19 +46,70 @@
           </form>
         </div>
     </nav>
-    <header>
-        <div class="row">
-            <div class="col-12">
-                <h2>Pillai College of Engineering, New Panvel.</h2>
+
+    <!--PCE Jumbotron-->
+    <div class="jumbotron" style="background-color: #E4EDF6;">
+      <h1 class="display-4">Pillai College of Engineering</h1>
+      <p class="lead">The idea behind AlumnEye is to bridge the gap between the Alumni and the students currently pursuing their degree in 
+        Pillai College of Engineering. <br>
+        This AlumnEye them on one platform where they can share their ideas and explore the current technologies in industries, which in 
+        turn makes the student industry ready. <br>
+        This web app allows students to interact with their alumni. 
+        The user is allowed to sign up to a free account to proceed with the service after which they can set up their profile by providing 
+        their personal information. <br>
+        Once this above mentioned procedure is completed, the user will be able to post their questions and also view and interact with the 
+        questions posted by other users. <br>
+      </p>
+      <hr class="my-4">
+      <p>For other exciting announcements, check out our college site.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">PCE</a>
+    </div>
+
+
+
+    <!--Cards with AOS Effect-->
+    <div class="container">
+      <!--First Row-->
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card" style="width: 18rem;" data-aos="zoom-out-right" data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
+          </div>
         </div>
-    </header>
+
+        <div class="col-md-6 mx-auto">
+          <div class="card" style="width: 18rem;" data-aos="zoom-out-left" data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    
 
 
 
-    <!--Bootstrap CDN-->
+    <!--Bootstrap Script-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!--AOS Script-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
