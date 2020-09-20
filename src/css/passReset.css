@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #E4EDF6 !important;
+    background-color: white!important;
 }
 
 .navbar-custom{
@@ -17,7 +17,8 @@ body{
 }
 
 .prform{
-    border: 1px solid #2b85c2;
+    /*border: 1px solid #2b85c2;*/
+    background-color: #E4EDF6;
     border-radius: 5%;
     box-shadow: 5px 5px #2b85c2;
     margin: auto;
