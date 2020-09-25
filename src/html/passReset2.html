@@ -38,12 +38,12 @@
                     <form class="form-contents">
                         <div class="form-group">
                           <label for="newPass" class="labels">New Password</label>
-                          <input type="password" class="form-control cust-form-ctrl" id="newPass" required>
+                          <input type="password" class="form-control cust-form-ctrl" id="newPass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                         </div>
                         </br>
                         <div class="form-group">
                           <label for="confirmpass" class="labels">Confirm Password</label>
-                          <input type="password" class="form-control cust-form-ctrl" id="confirmpass" required>
+                          <input type="password" class="form-control cust-form-ctrl" id="confirmpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                         </div>
                         <div class="form-group">
                             <a href="./index.html" class="btn btn-primary btn-custom">Submit</a>
