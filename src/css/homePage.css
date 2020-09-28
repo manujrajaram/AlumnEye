@@ -108,6 +108,32 @@
     text-align:justify
 }
 
+.network-box,.post-writer-box{
+    display:grid;
+    grid-template-columns: 20% 70%;
+    grid-gap: 0;
+    
+}
+
+.post-writer-box > div{
+    border:black solid;
+}
+
+.network-image,.post-writer-image{
+    grid-row:1/4;
+    
+}
+
+.network-profile,.post-writer-profile{
+    font-size:80%;
+}
+
+.network-image,.post-writer-image{
+    padding:3px;
+    height:40px;
+    width:40px;
+}
+
 @media only screen and (max-width: 1000px) {
    .flex-left,.flex-right{
        visibility:hidden;
