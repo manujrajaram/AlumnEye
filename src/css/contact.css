@@ -9,3 +9,33 @@
     background-image: linear-gradient( #004B7C,#00263E);
 }
 
+.map-container-section {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-container-section iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.btn-custom {
+    max-width: 380px;
+    width: 100%;
+    background-image: linear-gradient( #004B7C,#00263E);
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 5px !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1.0rem !important;
+}
