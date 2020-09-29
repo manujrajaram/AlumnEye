@@ -90,7 +90,7 @@ form {
 .btn {
     max-width: 380px;
     width: 100%;
-    background-color: #002944;
+    background-image: linear-gradient( #004B7C,#00263E);
     border: none;
     outline: none;
     height: 49px;
@@ -137,7 +137,7 @@ form.sign-up-form {
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
-    background-image: linear-gradient(-45deg, #023353 0%, #012d4b 100%);
+    background-image: linear-gradient( #004B7C,#00263E);
     transition: 1.8s ease-in-out;
     z-index: 6;
 }
