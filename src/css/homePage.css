@@ -136,11 +136,18 @@
 
 @media only screen and (max-width: 1000px) {
    .flex-left,.flex-right{
-       visibility:hidden;
+       display:none;
+       
+   }
+
+   .flex-container{
+       margin:0;
+       padding:0;
+       display: inline;
    }
    .flex-center{
-      flex:0 0 90%;
-      margin: 0;
+     
+      margin:0;
       padding:0;
    }
   }
