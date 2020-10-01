@@ -113,6 +113,7 @@
     grid-template-columns: 20% 70%;
     grid-gap: 0;
     
+    
 }
 
 .post-writer-box > div{
@@ -125,13 +126,15 @@
 }
 
 .network-profile,.post-writer-profile{
-    font-size:80%;
+    font-size:70%;
+   
 }
 
 .network-image,.post-writer-image{
     padding:3px;
-    height:40px;
-    width:40px;
+    height:100%;
+    width:100%;
+    
 }
 
 @media only screen and (max-width: 1000px) {
