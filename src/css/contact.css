@@ -43,3 +43,8 @@
     transition: 0.5s;
     font-size: 1.0rem !important;
 }
+
+span{
+    font-size: 12px;
+    color:red;
+}
