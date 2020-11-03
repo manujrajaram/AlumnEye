@@ -25,3 +25,26 @@ marker.addTo(map); // Adding marker to the map
 
 
 
+//Video Tag JS Buttons
+var video = document.getElementById("abtVid");
+var btn = document.getElementById("myBtn");
+function vidFunction(){
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+    }else{
+        video.pause();
+        btn.innerHTML = "Play";
+    }
+}
+function screenFunction(){
+    if (video.requestFullscreen){
+        video.requestFullscreen();
+    }else if (video.mozRequestFullScreen){ /* Firefox */
+        video.mozRequestFullScreen();
+    }else if (video.webkitRequestFullscreen){ /* Chrome, Safari and Opera */
+        video.webkitRequestFullscreen();
+    }else if (video.msRequestFullscreen){ /* IE/Edge */
+        video.msRequestFullscreen();
+    }
+}
