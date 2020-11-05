@@ -12,3 +12,26 @@
 }
 
 
+
+.img-college,.img-college-2{
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+
+
+    background-attachment:fixed;
+}
+
+.img-college{
+    background-image:url('../../images/college1.jpg');
+    min-height:700px;
+}
+
+.img-college-2{
+    background-image:url('../../images/college2.PNG');
+    min-height:700px;
+}
