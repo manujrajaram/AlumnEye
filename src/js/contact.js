@@ -6,13 +6,13 @@ function formValidation(){
   let email=document.getElementById("form-email");
   let subject=document.getElementById("form-Subject");
   let textArea=document.getElementById("form-text");
-
   
+
   if (name_Validation(name)){
     if (email_Validation(email)){
         if (subject_Validation(subject)){
             if(textArea_Validation(textArea)){
-
+               
             }
         }
     }
@@ -71,7 +71,7 @@ function subject_Validation(subject){
 
 function textArea_Validation(textArea){
     if (textArea.value==""|| textArea.value==null){
-        document.getElementById("textarea_validate").innerHTML="Please enter the message! " ;
+        document.getElementById("textArea_validate").innerHTML="Please enter the message!" ;
         textArea.focus();
         return false;  
     }
@@ -81,3 +81,4 @@ function textArea_Validation(textArea){
         return true;
     }
 }
+
