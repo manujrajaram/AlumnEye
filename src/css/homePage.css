@@ -14,6 +14,22 @@
      display:none;
  }
 
+.post-btn{
+    width: 100%;
+    background-image: linear-gradient( #004B7C,#00263E);
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 5px;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1.0rem;
+}
+
  @media only screen and (max-width:500px){
      #toggle{
          display:block;
