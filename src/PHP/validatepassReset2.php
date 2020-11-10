@@ -21,7 +21,7 @@ if (isset($_POST['newpass'], $_POST['confirmPass'])){
 		$nomatchErr = "Password do not match please try again";
 	}
 }else{
-	$emptyfieldErr = "Please fill both the fields"
+	$emptyfieldErr = "Please fill both the fields";
 }
 
 function test_input($data){
