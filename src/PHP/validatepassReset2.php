@@ -5,7 +5,7 @@ if (isset($_POST['newpass'], $_POST['confirmPass'])){
 	$cpassword = test_input($_POST['confirmPass']);
 
 	if ($password == $cpassword){
-		if (strlen($password <= '8'){
+		if (strlen($password <= '8')){
     		$passwordErr = "Your Password Must Contain At Least 8 Characters!";
 		}
 		elseif(!preg_match("#[0-9]+#",$password)){
