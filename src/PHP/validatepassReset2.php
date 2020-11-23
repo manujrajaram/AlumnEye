@@ -1,4 +1,4 @@
-<?php
+ <?php
 $emptyfieldErr = $nomatchErr = "";
 if (isset($_POST['newpass'], $_POST['confirmPass'])){
 	$password = test_input($_POST['newpass']);
