@@ -19,7 +19,6 @@ if (isset($_POST['sign-in'])){
     	}
     	if ($dbpassword != md5($password)){
     		echo "<script>alert('Incorrect Password!')</script>";
-    		header("Location: https://alumneye.000webhostapp.com/index.html");
     	}
     	else{
     		header("Location: https://alumneye.000webhostapp.com/homePage.html");
