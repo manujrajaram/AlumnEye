@@ -13,19 +13,20 @@ if (isset($_POST['sign-in'])){
 		echo "<script>alert('User not Found!')</script>";
 	}
 
-	elseif($row){
-		while($row = mysqli_fetch_assoc($exequery)){
-			$dbpassword= $row['password'];
-		}
-	}
+	elseif($rows){
+    	while($row = mysqli_fetch_assoc($exequery)){
+    		$dbpassword= $row['password'];
+    	}
+    	if ($dbpassword != md5($password)){
+    		echo "<script>alert('Incorrect Password!')</script>";
+    		header("Location: https://alumneye.000webhostapp.com/index.html");
+    	}
+    	else{
+    		header("Location: https://alumneye.000webhostapp.com/homePage.html");
+    	}
+    }
 
-	elseif ($dbpassword != md5($password)){
-		echo "<script>alert('Incorrect Password!')</script>";
-	}
 
-	else{
-		header("Location: https://alumneye.000webhostapp.com/homePage.html");
-	}
 }
 
 ?>
