@@ -10,7 +10,10 @@ $rows = mysqli_num_rows($exequery);
 
 if (isset($_POST['sign-in'])){
 	if ($rows == 0){
-		echo "<script>alert('User not Found!')</script>";
+		echo '<script type="text/javascript">';
+		echo 'alert("User not found!");';
+		echo 'window.location= "https://alumneye.000webhostapp.com/index.html";';
+		echo '</script>';
 	}
 
 	elseif($rows){
@@ -18,7 +21,10 @@ if (isset($_POST['sign-in'])){
     		$dbpassword= $row['password'];
     	}
     	if ($dbpassword != md5($password)){
-    		echo "<script>alert('Incorrect Password!')</script>";
+			echo '<script type="text/javascript">';
+			echo 'alert("Incorrect Password!");';
+			echo 'window.location= "https://alumneye.000webhostapp.com/index.html";';
+			echo '</script>';
     	}
     	else{
     		header("Location: https://alumneye.000webhostapp.com/homePage.html");

@@ -10,7 +10,7 @@ $checkquery = " SELECT username FROM users WHERE username = '$username' ";
 $execheckquery = mysqli_query($connect, $checkquery);
 
 $count = mysqli_num_rows($execheckquery);
-if (count != 0){
+if ($count != 0){
 	echo "<script>alert('Username already exists!')</script>";
 }
 else{
@@ -26,11 +26,17 @@ else{
 			//Inserting values insisde the database
 			$query = " INSERT INTO users (username, password, email) VALUES ('$username', '$password', '$email') ";
 			mysqli_query($connect, $query);
-			echo "<script>alert('You have been registered!')</script>";
+			echo '<script type="text/javascript">';
+			echo 'alert("You have been registered!");';
+			echo 'window.location= "https://alumneye.000webhostapp.com/index.html";';
+			echo '</script>';
 		}	
 	}
 	else{
-		echo "<script>alert('Passwords do not match!')</script>";
+		echo '<script type="text/javascript">';
+		echo 'alert("Passwords do not match!");';
+		echo 'window.location= "https://alumneye.000webhostapp.com/index.html";';
+		echo '</script>';
 	}
 }
 
