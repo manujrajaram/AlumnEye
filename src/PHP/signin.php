@@ -12,14 +12,14 @@ if (isset($_POST['sign-in'])){
 	if ($rows == 0){
 		echo "<script>alert('User not Found!')</script>";
 	}
-	else if($rows){
-		header("Location: https://alumneye.000webhostapp.com/homePage.html");
-	}
 	else{
 		while ($row = mysqli_fetch_assoc($exequery)){
 			$dbpassword = $row['password'];
 			if($dbpassword != md5($password)){
 				echo "<script>alert('Incorrect Password!')</script>";
+			}
+			elseif($dbpassword == md5($password)){
+				header("Location: https://alumneye.000webhostapp.com/homePage.html");
 			}
 		}
 	}
