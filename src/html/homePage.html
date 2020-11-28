@@ -76,7 +76,7 @@
         </div>
 
 
-        <div class="flex-center">
+        <div class="flex-center" id="post-post">
             <div class="flex-post-answer">
                 <!--Bootstrap Modal-->
                 <!-- Button trigger modal -->
@@ -85,6 +85,7 @@
                 </button>
                 
                 <!-- Modal -->
+                
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -94,12 +95,15 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                         </div>
+                        <form action= "../PHP/homePage.php" id="post-content-form" name="post-content-form" method="POST">
                         <div class="modal-body">
-                        <textarea rows="10" class="form-control" placeholder="Write your messsage here"></textarea> 
+                        <textarea rows="10"  id="post-content" name="post-content" class="form-control" placeholder="Write your messsage here" ></textarea> 
                         </div>
+                        </form>
                         <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-primary">Post</button>
+                        <a class="btn btn-primary" id="post-button-a" onclick="document.getElementById('post-content-form').submit();">Post</a>
+                        <!-- <button type="submit" class="btn btn-primary" id="post-button">Post</button> -->
                         </div>
                     </div>
                     </div>
@@ -117,15 +121,15 @@
 
                 <div class="post-view-answer">
                     You don’t need to commit to memorizing every CSS Property and Value, as there are good places to
-look them up. There are some fundamental things, however, which will make CSS much easier for
- you to use. 
+                    look them up. There are some fundamental things, however, which will make CSS much easier for
+                    you to use. 
 
-I get a lot of people asking me to recommend to them utorials on various parts of CSS, or asking how 
-to learn CSS. I also see a lot of people who are confused about bits of CSS, in part because of outdated 
-ideas about the language. Given that CSS has changed quite substantially in the last few years, this is a
- really good time to refresh your knowledge. Even if CSS is a small part of what you do (because you
- work elsewhere in the stack), CSS is how things end up looking as you want them on screen, so it is
- worth being reasonably up to date. 
+                    I get a lot of people asking me to recommend to them utorials on various parts of CSS, or asking how 
+                    to learn CSS. I also see a lot of people who are confused about bits of CSS, in part because of outdated 
+                    ideas about the language. Given that CSS has changed quite substantially in the last few years, this is a
+                    really good time to refresh your knowledge. Even if CSS is a small part of what you do (because you
+                    work elsewhere in the stack), CSS is how things end up looking as you want them on screen, so it is
+                    worth being reasonably up to date. 
                 </div>
 
 
@@ -211,6 +215,8 @@ ideas about the language. Given that CSS has changed quite substantially in the 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="../js/homePage.js"></script>
 </body>
 
 </html>
