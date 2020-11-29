@@ -40,6 +40,7 @@
         </tbody>
       </table>
       <a href="admin_delete.php" class="btn btn-danger mb-4">Delete User</a>
+      <a href="../html/adminlogin.html" class="btn btn-secondary mb-4">Logout</a>
     </div> 
     <!--Bootstrap Script-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
