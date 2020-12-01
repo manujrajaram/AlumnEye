@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+
+require('../PHP/connectFordB.php');
+if(!isset($_SESSION['username'])){
+    header('Location: http://localhost/INTP_project/Alumneye/src/html/index.html'); 
+} 
+
+?>
 <html lang="en">
 
 <head>
@@ -41,7 +48,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="./profile.html">View Profile</a>
                   <a class="dropdown-item" href="#">Settings</a>
-                  <a class="dropdown-item" href="./index.html">Sign Out</a>
+                  <a class="dropdown-item" href="../PHP/logout.php">Sign Out</a>
                 </div>
               </li>
           </ul>

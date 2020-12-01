@@ -27,7 +27,8 @@ if (isset($_POST['sign-in'])){
 			echo '</script>';
     	}
     	else{
-    		header("Location: https://alumneye.000webhostapp.com/homePage.html");
+    		$_SESSION['username'] = $username;
+    		header("Location: http://localhost/INTP_project/Alumneye/src/html/homePage.php");
     	}
     }
 
