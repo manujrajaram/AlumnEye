@@ -1,3 +1,7 @@
+<?php
+  require('connectFordB.php');
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,8 +13,7 @@
 </head>
 <body>
     <div class="container">
-    <h1>Welcome, </h1>
-    <h1><?php echo $_SESSION['adminname']; ?></h1>
+    <h1>Welcome, <?php echo ucfirst($_SESSION['adminname']); ?> !</h1>
     <h1 class="display-4 mb-4 mt-5">List of Users</h1>
     <table class="table table-striped table-dark" style="text-align: center;">
         <thead>
@@ -23,10 +26,8 @@
     
         <tbody>
             <?php
-
-            require('connectFordB.php');
             if(!isset($_SESSION['adminname'])){
-              header('Location: http://localhost/INTP_project/Alumneye/src/html/index.html'); 
+              header('Location: http://localhost/src/html/adminlogin.html'); 
             }else{
               $query = " SELECT * FROM users ";
               $exequery = mysqli_query($connect, $query);
@@ -46,7 +47,7 @@
         </tbody>
       </table>
       <a href="admin_delete.php" class="btn btn-danger mb-4">Delete User</a>
-      <a href="../html/adminlogin.html" class="btn btn-secondary mb-4">Logout</a>
+      <a href="../PHP/admin_logout.php" class="btn btn-secondary mb-4">Logout</a>
     </div> 
     <!--Bootstrap Script-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
