@@ -10,7 +10,7 @@ if ($rows != 0) {
 	while ($row = mysqli_fetch_assoc($execheckquery)){
 		$dbpassword = $row['a_password'];
 		if ($dbpassword == $apassword){
-			echo "<a href = 'admin_panel.php'>Click here</a> to view list of users";
+			header("Location: http://localhost/src/PHP/admin_panel.php");
 		}
 		else{
 			echo "<script>alert('Incorrect password')</script>";

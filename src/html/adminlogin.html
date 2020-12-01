@@ -1,20 +1,42 @@
-<html>
-    <form action="../PHP/admin_login.php" method="POST">
-        <table>
-            <tr>
-                <td>Admin Username:</td>
-                <td><input type="text" name="adminname"></td>
-            </tr>
-            <tr>
-                <td>Password:</td>
-                <td><input type="password" name="password"></td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="submit" name="submit" value="Login">
-                </td>
-            </tr>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom styles for this template -->
+    <link  rel="stylesheet" href="../css/adminlogin.css">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>AlumnEye Admin</title>
+  </head>
 
-        </table>
+  <body class="text-center">
+    <form class="form-signin" action="../PHP/admin_login.php" method="POST">
+      <div class="form-header">
+        <h3 class="mt-2">Admin</h3>
+      </div>
+
+      <p class="mb-3 text-muted">Please Sign In</p>
+      <input type="text" id="adminname" name="adminname" class="form-control" placeholder="Admin Username" required autofocus>
+
+      <input type="password" id="password" name="password" class="form-control" placeholder="Admin Password" required>
+
+      <input type="submit" class="btn btn-lg btn-primary btn-block" name="submit" value="Sign In">
+
     </form>
+
+
+    <!--Bootstrap Script-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
 </html>
+
+
+
+
+
+
+
+
