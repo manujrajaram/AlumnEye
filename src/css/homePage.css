@@ -14,6 +14,22 @@
      display:none;
  }
 
+.post-btn{
+    width: 100%;
+    background-image: linear-gradient( #004B7C,#00263E);
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 5px;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1.0rem;
+}
+
  @media only screen and (max-width:500px){
      #toggle{
          display:block;
@@ -72,7 +88,7 @@
 }
 
 .flex-field-related,.flex-suggested-network,.flex-questions{
-    background:white;
+    background-color:white;
     padding:10px;
    
 
@@ -113,6 +129,7 @@
     grid-template-columns: 20% 70%;
     grid-gap: 0;
     
+    
 }
 
 .post-writer-box > div{
@@ -125,22 +142,31 @@
 }
 
 .network-profile,.post-writer-profile{
-    font-size:80%;
+    font-size:70%;
+   
 }
 
 .network-image,.post-writer-image{
-    padding:3px;
-    height:40px;
-    width:40px;
+    padding:2px;
+    height:100%;
+    width:100%;
+    
 }
 
 @media only screen and (max-width: 1000px) {
    .flex-left,.flex-right{
-       visibility:hidden;
+       display:none;
+       
+   }
+
+   .flex-container{
+       margin:0;
+       padding:0;
+       display: inline;
    }
    .flex-center{
-      flex:0 0 90%;
-      margin: 0;
+     
+      margin:0;
       padding:0;
    }
   }

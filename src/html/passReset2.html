@@ -35,20 +35,20 @@
         <div class="row mt-5">
             <div class="col-md-8 col-lg-8 col-xl-4 m-auto">
                 <div class="prform">
-                    <form class="form-contents">
+                    <form method="POST" action="../PHP/validatepassReset2.php"class="form-contents">
                         <div class="form-group">
                           <label for="newPass" class="labels">New Password</label>
-                          <input type="password" class="form-control cust-form-ctrl" id="newPass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                          <input type="password" class="form-control cust-form-ctrl" name="newpass" id="newPass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                         </div>
                         </br>
                         <div class="form-group">
                           <label for="confirmpass" class="labels">Confirm Password</label>
-                          <input type="password" class="form-control cust-form-ctrl" id="confirmpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                          <input type="password" class="form-control cust-form-ctrl" name="confirmPass" id="confirmpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                         </div>
                         <div class="form-group">
                             <a href="./index.html" class="btn btn-primary btn-custom">Submit</a>
                         </div>
-                      </form>
+                    </form>
                 </div>
             </div>
         </div>

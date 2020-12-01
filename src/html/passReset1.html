@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--Font Awesome CDN-->
     <script src="https://kit.fontawesome.com/78a1f04c92.js" crossorigin="anonymous"></script>
-    <script >
-    	function validateAndSend() {
-            if (myForm.eMail.value == '' && myForm.phone.value == '') {
-                alert('You have to enter atleast one field');
-                return false;
-            }
-            else {
-                myForm.submit();
-            }
-        }
-    </script>
+    <!--
+            <script >
+                function validateAndSend() {
+                    if (myForm.eMail.value == '' && myForm.phone.value == '') {
+                        alert('You have to enter atleast one field');
+                        return false;
+                    }
+                    else {
+                        myForm.submit();
+                    }
+                }
+            </script>
+    -->
+
 </head>
 <body>
     <!--Navbar-->
@@ -46,7 +49,7 @@
         <div class="row mt-5 box">
             <div class="col-md-8 col-lg-8 col-xl-4 m-auto">
                 <div class="prform">
-                    <form name="myForm" class="form-contents">
+                    <form name="myForm" method="POST" action="../PHP/validatepassReset1.php" class="form-contents">
                         <div class="form-group">
                           <label for="emailPR" class="labels">Email</label>
                           <input type="email" name="eMail" class="form-control cust-form-ctrl" id="emailPR" placeholder="username@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
@@ -56,10 +59,10 @@
                         </div>
                         <div class="form-group">
                           <label for="mobilePR" class="labels">Mobile Number</label>
-                          <input type="text" name="phone" class="form-control cust-form-ctrl" id="mobilePR" placeholder="10 digit mobile number" minlength="10" maxlength="12" re>
+                          <input type="tel" name="phone" class="form-control cust-form-ctrl" id="mobilePR" pattern="[0-9]{10}" title="Please enter only number" placeholder="10 digit mobile number" minlength="10" required>
                         </div>
                         <div class="form-group">
-                            <a href="./passReset2.html" class="btn btn-primary btn-custom" onclick="validateAndSend()">Submit</a>
+                            <input type="submit" class="btn btn-primary btn-custom" value="SUBMIT">
                         </div>
                       </form>
                 </div>
