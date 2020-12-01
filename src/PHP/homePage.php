@@ -14,7 +14,7 @@ $exequery = mysqli_query($connect, $query);
 
 }
 
-echo "<script>window.location.href= ' http://localhost/AlumnEye/src/html/homePage.html' </script>" 
+echo "<script>window.location.href= ' http://localhost/src/html/homePage.php' </script>" 
 
 
 
