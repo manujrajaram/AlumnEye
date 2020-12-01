@@ -139,6 +139,9 @@ if(!isset($_SESSION['username'])){
                     worth being reasonably up to date. 
                 </div>
 
+                <div class="post-view">
+                    <div class="post-view-question">How to be good at coding?</div>
+                </div>
 
             </div> 
 
