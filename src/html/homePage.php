@@ -46,7 +46,7 @@ if(!isset($_SESSION['username'])){
                   <i class="fas fa-user-circle"></i> Profile
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="./profile.html">View Profile</a>
+                  <a class="dropdown-item" href="./profile.html"><?php echo $_SESSION['username']; ?></a>
                   <a class="dropdown-item" href="#">Settings</a>
                   <a class="dropdown-item" href="../PHP/logout.php">Sign Out</a>
                 </div>

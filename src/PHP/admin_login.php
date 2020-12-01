@@ -10,6 +10,7 @@ if ($rows != 0) {
 	while ($row = mysqli_fetch_assoc($execheckquery)){
 		$dbpassword = $row['a_password'];
 		if ($dbpassword == $apassword){
+			$_SESSION['adminname'] = $ausername;
 			header("Location: http://localhost/src/PHP/admin_panel.php");
 		}
 		else{

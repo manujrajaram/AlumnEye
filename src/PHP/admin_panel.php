@@ -9,6 +9,8 @@
 </head>
 <body>
     <div class="container">
+    <h1>Welcome, </h1>
+    <h1><?php echo $_SESSION['adminname']; ?></h1>
     <h1 class="display-4 mb-4 mt-5">List of Users</h1>
     <table class="table table-striped table-dark" style="text-align: center;">
         <thead>
@@ -23,18 +25,22 @@
             <?php
 
             require('connectFordB.php');
-            $query = " SELECT * FROM users ";
-            $exequery = mysqli_query($connect, $query);
+            if(!isset($_SESSION['adminname'])){
+              header('Location: http://localhost/INTP_project/Alumneye/src/html/index.html'); 
+            }else{
+              $query = " SELECT * FROM users ";
+              $exequery = mysqli_query($connect, $query);
 
-            while($row = mysqli_fetch_assoc($exequery)){
-              $username = $row['username'];
-              $password = $row['password'];
-              $email = $row['email'];
-              echo "<tr>";
-              echo "<td>$username</td>";
-              echo "<td>$password</td>";
-              echo "<td>$email</td>";
-              echo "</tr>";
+              while($row = mysqli_fetch_assoc($exequery)){
+                $username = $row['username'];
+                $password = $row['password'];
+                $email = $row['email'];
+                echo "<tr>";
+                echo "<td>$username</td>";
+                echo "<td>$password</td>";
+                echo "<td>$email</td>";
+                echo "</tr>";
+              }
             }
             ?>        
         </tbody>

@@ -1,3 +1,12 @@
+<?php
+
+require('../PHP/connectFordB.php');
+if(!isset($_SESSION['username'])){
+  header('Location: http://localhost/INTP_project/Alumneye/src/html/index.html'); 
+} 
+
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
