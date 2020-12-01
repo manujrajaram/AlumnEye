@@ -9,6 +9,7 @@ The idea behind this web app is to bridge the gap between the Alumni and student
 - CSS
 - JavaScript
 - PHP
+- AJAX
 - Media Query for Responsive Web Design
 - Adobe XD for WireFrame
 
